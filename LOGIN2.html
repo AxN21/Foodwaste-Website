@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Challenge</title>
+
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Link to Font Awesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+   <!-- Sub-Header Section -->
+  <section class="sub-header2">
+    <nav>
+
+        <!-- Logo -->
+        <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+
+         <!-- Navigation Links -->
+         <div class="nav-links" id="navLinks">
+
+            <!-- Close Menu Button -->
+            <i class="fa fa-xmark" onclick="hideMenu()"></i>
+
+             <!-- Navigation Menu -->
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="ourmission.html">OUR MISSION</a></li>
+             </ul>
+         </div>
+
+         <!-- Mobile Menu Toggle Button -->
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+
+         <!-- Login Button -->
+         <a href="LOGIN2.html" class="button">LOGIN</a>
+    </nav>
+    
+
+</section>
+
+<!-- Login/Sign Up Section -->
+<section>
+<div class="form">
+
+    <!-- Tab Header -->
+    <div class="tab-header">
+      <div class="active">Sign Up</div>
+      <div>Log in</div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-body active">
+
+        <!-- Sign Up Form -->
+        <div class="form-element">
+          <input type="text" placeholder="Email" required>
+        </div>
+        <div class="form-element">
+          <input type="text" placeholder="Username" required>
+        </div>
+        <div class="form-element">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <div class="form-element">
+          <a href="index.html"><button>Sign Up</button></a>
+        </div>
+      </div>
+      
+      <div class="tab-body">
+
+        <!-- Log In Form -->
+        <div class="form-element">
+          <input type="text" placeholder="Email / Username" required>
+        </div>
+        <div class="form-element">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember_me">
+          <label for="remember_me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <a href="index.html"><button>LOG IN</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- JavaScript login form-->
+  <script>
+
+  let tabPanes = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
+
+  for(let i=0;i<tabPanes.length;i++){
+    tabPanes[i].addEventListener("click",function(){
+      document.getElementsByClassName("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+      tabPanes[i].classList.add("active");
+      
+      document.getElementsByClassName("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+      document.getElementsByClassName("tab-content")[0].getElementsByClassName("tab-body")[i].classList.add("active");
+    });
+  }
+  var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+</script>
+</body>
+</html>

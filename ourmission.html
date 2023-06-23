@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Challenge</title>
+
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Link to Font Awesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Sub-Header Section -->
+    <section class="sub-header">
+    <nav>
+
+        <!-- Logo -->
+        <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+
+         <!-- Navigation Links -->
+         <div class="nav-links" id="navLinks">
+
+            <!-- Close Menu Button -->
+            <i class="fa fa-xmark" onclick="hideMenu()"></i>
+             <ul>
+
+                <!-- Navigation Menu -->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="ourmission.html">OUR MISSION</a></li>
+             </ul>
+         </div>
+
+         <!-- Mobile Menu Toggle Button -->
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+
+         <!-- Login Button -->
+         <a href="LOGIN2.html" class="button">LOGIN</a>
+    </nav>
+    <!-- Text -->
+    <div class="mission">
+    <h1>Our Mission</h1>
+    <h2 lang="en">Contribute to addressing the issue of food waste by simultaneously providing food to individuals in need.</h2>
+<p lang="en">The issue of food waste spans from agricultural production to landfill, encompassing various stages. A significant portion, exceeding 40%, of edible food prepared by restaurants worldwide remains uneaten and ultimately discarded. Our objective is to address this problem by establishing a platform that facilitates collaboration between homeless shelters, charities, and individuals willing to assist. Through this platform, they can connect with restaurants to negotiate reduced prices for surplus food, thereby minimizing waste.</p>
+<p>Global food waste has an enormous environmental impact, too. Food waste is a huge source of greenhouse gas (GHG) emissions and wasted natural resources, and therefore – reducing food waste could help to reduce global greenhouse gas emissions, establish food security, and encourage healthy food systems.</p>
+</div>
+
+    </section>
+
+<!--JavaScript for Toggle Menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+    </script>
+
+
+</body>
+</html>

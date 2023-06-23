@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Challenge</title>
+
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preconnect to Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Link to Font Awesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header section -->
+    <section class="header">
+    <nav>
+
+        <!--Logo-->
+        <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+
+        <!--Navigation Links-->
+         <div class="nav-links" id="navLinks">
+
+        <!-- Close button-->
+            <i class="fa fa-xmark" onclick="hideMenu()"></i>
+
+            <!-- Navigation Menu-->
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="ourmission.html">OUR MISSION</a></li>
+             </ul>
+         </div>
+
+         <!-- Mobile Menu Toggle Button-->
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+         
+         <!-- Login Button-->
+         <a href="LOGIN2.html" class="button">LOGIN</a>
+    </nav>
+
+    <!-- Text Box Content-->
+<div class="text-box">
+    <h1 lang="en">Help people in need</h1>
+    <p lang="en">Globally, we waste one billion tons of food annually. Restaurants waste 4% to 10% of the food they bought,<br> and 40% of the food they serve to customers is never eaten</p>
+    <a href="" class="button">SEARCH</a>
+
+</div>
+
+</section>
+
+
+<!--JavaScript for Toggle Menu-->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>

@@ -2,6 +2,8 @@
 
 !!!!!IMPORTANT!!!!!! TYPE THIS DOMAIN NAME INTO YOUR BROWSER "foodwaste.site"
 
+CODE DOCUMENTATION
+
 HOME PAGE 
 
 This code represents an HTML document structure with a header section containing a navigation bar and a text box. The JavaScript code provides functionality to toggle the mobile menu when the menu button is clicked. The CSS file referenced in the **`<link>`** tag is responsible for styling the elements in the HTML code.
